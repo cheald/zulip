@@ -935,9 +935,9 @@ def process_presence_event(event: Mapping[str, Any], users: Iterable[int]) -> No
         for client in get_client_descriptors_for_user(user_profile_id):
             if client.accepts_event(event):
                 if client.slim_presence:
-                    client.add_event(slim_event)
+                    client.add_event(dict(slim_event))
                 else:
-                    client.add_event(legacy_event)
+                    client.add_event(dict(legacy_event))
 
 def process_event(event: Mapping[str, Any], users: Iterable[int]) -> None:
     for user_profile_id in users:
