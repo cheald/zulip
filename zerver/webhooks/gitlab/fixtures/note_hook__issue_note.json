@@ -24,7 +24,7 @@
    },
    "object_attributes":{
       "id":14172057,
-      "note":"Nice issue",
+      "note":"Nice issue. See ![this image](/uploads/deadbeef.png)",
       "noteable_type":"Issue",
       "author_id":670043,
       "created_at":"2016-08-22 19:46:01 UTC",
